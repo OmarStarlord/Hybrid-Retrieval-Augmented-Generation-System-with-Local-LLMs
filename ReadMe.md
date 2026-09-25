@@ -662,6 +662,3 @@ Réponse :
 
 ---
 
-## Licence
-
-Licence MIT — Voir le fichier LICENSE pour les détails.
