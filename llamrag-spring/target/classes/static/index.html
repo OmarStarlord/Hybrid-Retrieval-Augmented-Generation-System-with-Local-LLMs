@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GraphRAG Chat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:"Inter",sans-serif;
+            background:linear-gradient(135deg,#0f172a,#111827);
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:30px;
+            color:white;
+        }
+
+        .container{
+            width:100%;
+            max-width:900px;
+            background:rgba(17,24,39,.92);
+            border:1px solid rgba(255,255,255,.08);
+            border-radius:24px;
+            padding:30px;
+            backdrop-filter:blur(16px);
+            box-shadow:
+                0 10px 40px rgba(0,0,0,.4),
+                0 0 0 1px rgba(255,255,255,.03);
+        }
+
+        .header{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .header h1{
+            font-size:2.5rem;
+            font-weight:700;
+            background:linear-gradient(90deg,#60a5fa,#a78bfa);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+
+        .header p{
+            margin-top:10px;
+            color:#9ca3af;
+        }
+
+        .chat-form{
+            display:flex;
+            gap:12px;
+            margin-bottom:24px;
+        }
+
+        .chat-form input{
+            flex:1;
+            padding:16px 18px;
+            border-radius:14px;
+            border:1px solid rgba(255,255,255,.08);
+            background:rgba(255,255,255,.05);
+            color:white;
+            font-size:1rem;
+            outline:none;
+            transition:.25s;
+        }
+
+        .chat-form input::placeholder{
+            color:#6b7280;
+        }
+
+        .chat-form input:focus{
+            border-color:#60a5fa;
+            box-shadow:0 0 0 4px rgba(96,165,250,.15);
+        }
+
+        .chat-form button{
+            padding:0 24px;
+            border:none;
+            border-radius:14px;
+            background:linear-gradient(135deg,#3b82f6,#8b5cf6);
+            color:white;
+            font-weight:600;
+            cursor:pointer;
+            transition:.25s;
+        }
+
+        .chat-form button:hover{
+            transform:translateY(-2px);
+        }
+
+        .chat-form button:disabled{
+            opacity:.6;
+            cursor:not-allowed;
+        }
+
+        .response-box{
+            background:rgba(255,255,255,.04);
+            border:1px solid rgba(255,255,255,.08);
+            border-radius:18px;
+            padding:22px;
+            min-height:250px;
+        }
+
+        .response-section{
+            margin-bottom:24px;
+            animation:fadeIn .3s ease;
+        }
+
+        .response-section:last-child{
+            margin-bottom:0;
+        }
+
+        .response-title{
+            font-size:.9rem;
+            font-weight:600;
+            color:#93c5fd;
+            margin-bottom:10px;
+            text-transform:uppercase;
+            letter-spacing:.05em;
+        }
+
+        .response-content{
+            background:rgba(0,0,0,.25);
+            border-radius:12px;
+            padding:16px;
+            line-height:1.7;
+            color:#e5e7eb;
+            white-space:pre-wrap;
+            overflow-x:auto;
+        }
+
+        .loading{
+            display:flex;
+            align-items:center;
+            gap:10px;
+            color:#9ca3af;
+        }
+
+        .spinner{
+            width:18px;
+            height:18px;
+            border:2px solid rgba(255,255,255,.15);
+            border-top-color:#60a5fa;
+            border-radius:50%;
+            animation:spin .8s linear infinite;
+        }
+
+        .error{
+            color:#fecaca;
+            background:rgba(239,68,68,.1);
+            border:1px solid rgba(239,68,68,.2);
+            padding:16px;
+            border-radius:12px;
+        }
+
+        @keyframes spin{
+            to{
+                transform:rotate(360deg);
+            }
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(10px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        @media(max-width:700px){
+
+            .chat-form{
+                flex-direction:column;
+            }
+
+            .chat-form button{
+                height:52px;
+            }
+
+            .header h1{
+                font-size:2rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>GraphRAG Chat</h1>
+        <p>Ask questions powered by ChromaDB + Neo4j</p>
+    </div>
+
+    <form id="rag-form" class="chat-form">
+
+        <input
+            type="text"
+            id="question"
+            placeholder="Ask something about your graph..."
+            required
+        >
+
+        <button type="submit" id="send-btn">
+            Send
+        </button>
+
+    </form>
+
+    <div id="response" class="response-box">
+
+        <div class="response-section">
+
+            <div class="response-title">
+                Ready
+            </div>
+
+            <div class="response-content">
+                Your AI responses will appear here.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+    const form = document.getElementById('rag-form');
+    const responseDiv = document.getElementById('response');
+    const sendBtn = document.getElementById('send-btn');
+
+    function createSection(title, content){
+
+        const section = document.createElement('div');
+        section.className = 'response-section';
+
+        const heading = document.createElement('div');
+        heading.className = 'response-title';
+        heading.textContent = title;
+
+        const body = document.createElement('div');
+        body.className = 'response-content';
+        body.textContent = content;
+
+        section.appendChild(heading);
+        section.appendChild(body);
+
+        return section;
+    }
+
+    form.addEventListener('submit', async (e) => {
+
+        e.preventDefault();
+
+        const questionInput = document.getElementById('question');
+        const question = questionInput.value.trim();
+
+        if(!question) return;
+
+        sendBtn.disabled = true;
+
+        responseDiv.innerHTML = `
+            <div class="loading">
+                <div class="spinner"></div>
+                Thinking...
+            </div>
+        `;
+
+        try {
+
+            const response = await fetch('/api/rag/chat', {
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body:JSON.stringify({
+                    question:question
+                })
+            });
+
+            if(!response.ok){
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            responseDiv.innerHTML = '';
+
+            responseDiv.appendChild(
+                createSection(
+                    'Chroma Answer',
+                    data.chroma_answer || 'No answer returned'
+                )
+            );
+
+            responseDiv.appendChild(
+                createSection(
+                    'Neo4j Answer',
+                    data.neo4j_answer || 'No answer returned'
+                )
+            );
+
+            if(data.cypher){
+
+                responseDiv.appendChild(
+                    createSection(
+                        'Generated Cypher Query',
+                        data.cypher
+                    )
+                );
+            }
+
+        } catch(error){
+
+            responseDiv.innerHTML = `
+                <div class="error">
+                    ${error.message}
+                </div>
+            `;
+
+        } finally {
+
+            sendBtn.disabled = false;
+        }
+
+    });
+
+</script>
+
+</body>
+</html>

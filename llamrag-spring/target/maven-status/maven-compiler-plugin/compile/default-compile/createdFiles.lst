@@ -1,0 +1,3 @@
+com\llamrag\service\FlaskService.class
+com\llamrag\controller\RagController.class
+com\llamrag\LlamragApplication.class

@@ -1,0 +1,111 @@
+{
+  "total_questions": 100,
+  "judge_wins": {
+    "chroma": 52,
+    "neo4j": 27,
+    "tie": 3,
+    "neither_or_error": 18
+  },
+  "win_rates": {
+    "chroma": 0.52,
+    "neo4j": 0.27,
+    "tie": 0.03
+  },
+  "expected_match_rate": 0.75,
+  "latency": {
+    "chroma_avg_sec": 17.771074250000527,
+    "chroma_median_sec": 16.524458100007905,
+    "neo4j_avg_sec": 14.254514198000543,
+    "neo4j_median_sec": 12.548947199997201
+  },
+  "scores": {
+    "chroma_avg_score": 3.11,
+    "neo4j_avg_score": 2.35
+  },
+  "by_category": {
+    "semantic_vibe": {
+      "total": 37,
+      "chroma": 34,
+      "neo4j": 0,
+      "tie": 0,
+      "neither": 3
+    },
+    "semantic_similarity": {
+      "total": 4,
+      "chroma": 4,
+      "neo4j": 0,
+      "tie": 0,
+      "neither": 0
+    },
+    "semantic_theme": {
+      "total": 19,
+      "chroma": 12,
+      "neo4j": 2,
+      "tie": 1,
+      "neither": 4
+    },
+    "structured_genre_lookup": {
+      "total": 3,
+      "chroma": 0,
+      "neo4j": 2,
+      "tie": 0,
+      "neither": 1
+    },
+    "graph_traversal": {
+      "total": 11,
+      "chroma": 1,
+      "neo4j": 8,
+      "tie": 0,
+      "neither": 2
+    },
+    "aggregation": {
+      "total": 12,
+      "chroma": 0,
+      "neo4j": 9,
+      "tie": 0,
+      "neither": 3
+    },
+    "structured_keyword_lookup": {
+      "total": 3,
+      "chroma": 0,
+      "neo4j": 1,
+      "tie": 1,
+      "neither": 1
+    },
+    "structured_cast_lookup": {
+      "total": 1,
+      "chroma": 0,
+      "neo4j": 0,
+      "tie": 0,
+      "neither": 1
+    },
+    "structured_director_lookup": {
+      "total": 2,
+      "chroma": 0,
+      "neo4j": 1,
+      "tie": 0,
+      "neither": 1
+    },
+    "structured_actor_lookup": {
+      "total": 2,
+      "chroma": 0,
+      "neo4j": 0,
+      "tie": 0,
+      "neither": 2
+    },
+    "structured_movie_lookup": {
+      "total": 3,
+      "chroma": 1,
+      "neo4j": 1,
+      "tie": 1,
+      "neither": 0
+    },
+    "structured_multi_filter": {
+      "total": 3,
+      "chroma": 0,
+      "neo4j": 3,
+      "tie": 0,
+      "neither": 0
+    }
+  }
+}

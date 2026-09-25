@@ -1,0 +1,663 @@
+{
+  "movie": {
+    "adult": false,
+    "backdrop_path": "/7f9ZaTwyqQOJtNWUS7xZgWQOzSt.jpg",
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "homepage": "",
+    "id": 1431071,
+    "imdb_id": "tt36201830",
+    "origin_country": [
+      "IN"
+    ],
+    "original_language": "hi",
+    "original_title": "\u0938\u093f\u0938\u094d\u091f\u092e",
+    "overview": "When Neha Rajvansh, a privileged public prosecutor, meets Sarika Rawat, a courtroom stenographer from a humble background, their lives are thrown into upheaval where power defines truth, blurring the system and raising a question of what justice truly means to them.",
+    "popularity": 105.014,
+    "poster_path": "/8qrddM5BRcTuqjc9crJY6e3gyE6.jpg",
+    "production_companies": [
+      {
+        "id": 199125,
+        "logo_path": "/fJJZLnOmXWdsi1vflvEi2kC5iBc.png",
+        "name": "Baweja Studios",
+        "origin_country": "IN"
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "IN",
+        "name": "India"
+      }
+    ],
+    "release_date": "2026-05-22",
+    "revenue": 0,
+    "runtime": 124,
+    "softcore": false,
+    "spoken_languages": [
+      {
+        "english_name": "Hindi",
+        "iso_639_1": "hi",
+        "name": "\u0939\u093f\u0928\u094d\u0926\u0940"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "System",
+    "video": false,
+    "vote_average": 7.5,
+    "vote_count": 2
+  },
+  "credits": {
+    "id": 1431071,
+    "cast": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 130958,
+        "known_for_department": "Acting",
+        "name": "Sonakshi Sinha",
+        "original_name": "Sonakshi Sinha",
+        "popularity": 1.0076,
+        "profile_path": "/7HaI5owaKzOb6Qdtwifp29uhHk2.jpg",
+        "cast_id": 2,
+        "character": "Neha Rajvansh",
+        "credit_id": "67a7068fbf0a9f6f54e061e8",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 147324,
+        "known_for_department": "Acting",
+        "name": "Jyothika",
+        "original_name": "Jyothika",
+        "popularity": 1.3435,
+        "profile_path": "/9rcFS99kwlSiQdY5Iv9YctJKh1F.jpg",
+        "cast_id": 1,
+        "character": "Sarika Rawat",
+        "credit_id": "67a70688ad2758bac5f10b79",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 78751,
+        "known_for_department": "Directing",
+        "name": "Ashutosh Gowariker",
+        "original_name": "Ashutosh Gowariker",
+        "popularity": 0.3771,
+        "profile_path": "/s48qPtQJVXdwrVfezMIiyowl3eT.jpg",
+        "cast_id": 7,
+        "character": "Ravi Rajvansh",
+        "credit_id": "69bbee33bd8d96593c3b9bee",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1682080,
+        "known_for_department": "Acting",
+        "name": "Adinath Kothare",
+        "original_name": "Adinath Kothare",
+        "popularity": 0.2734,
+        "profile_path": "/5mpunA4RSLJhtkYHTB6UMvOfrV5.jpg",
+        "cast_id": 15,
+        "character": "Alok Rajvansh",
+        "credit_id": "69fb415ad81c4e4f03b9aab3",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4160287,
+        "known_for_department": "Acting",
+        "name": "Aashriya Mishra",
+        "original_name": "Aashriya Mishra",
+        "popularity": 0.1177,
+        "profile_path": null,
+        "cast_id": 16,
+        "character": "Kusum Rawat",
+        "credit_id": "69fb4198c334553001cd0eb6",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1566911,
+        "known_for_department": "Acting",
+        "name": "Gaurav Pandey",
+        "original_name": "Gaurav Pandey",
+        "popularity": 0.388,
+        "profile_path": "/rH9haKecOQsjMP7BC9XRi1kl5uF.jpg",
+        "cast_id": 17,
+        "character": "Akshay Rao",
+        "credit_id": "69fb41a8b2e9ad78c0367ebd",
+        "order": 5
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 6193828,
+        "known_for_department": "Acting",
+        "name": "Sayandeep Gupta",
+        "original_name": "Sayandeep Gupta",
+        "popularity": 0.0536,
+        "profile_path": null,
+        "cast_id": 18,
+        "character": "Raghav Shrivastav",
+        "credit_id": "69fb41c721abeed007367fc5",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2746527,
+        "known_for_department": "Acting",
+        "name": "Preeti Agarwal Mehta",
+        "original_name": "Preeti Agarwal Mehta",
+        "popularity": 0.0662,
+        "profile_path": null,
+        "cast_id": 19,
+        "character": "",
+        "credit_id": "69fc47e5a9aff5eb898c424b",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1758521,
+        "known_for_department": "Acting",
+        "name": "Vijayant Kohli",
+        "original_name": "Vijayant Kohli",
+        "popularity": 0.3182,
+        "profile_path": "/dzzewlf0Z5dEkVxu4QkH86xUEx4.jpg",
+        "cast_id": 20,
+        "character": "Vikram Bajral",
+        "credit_id": "6a0419ab368631d4d87bccca",
+        "order": 8
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4442105,
+        "known_for_department": "Acting",
+        "name": "Diwanshu Gambhir",
+        "original_name": "Diwanshu Gambhir",
+        "popularity": 0.0865,
+        "profile_path": null,
+        "cast_id": 21,
+        "character": "Juggi",
+        "credit_id": "6a0419c623499eb28264e3ba",
+        "order": 9
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5544258,
+        "known_for_department": "Acting",
+        "name": "Freya Kothari",
+        "original_name": "Freya Kothari",
+        "popularity": 0.0357,
+        "profile_path": null,
+        "cast_id": 22,
+        "character": "Inaaya Kothari",
+        "credit_id": "6a0419ce08194b958e91ad15",
+        "order": 10
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4443704,
+        "known_for_department": "Acting",
+        "name": "Bhupendra Chauhan",
+        "original_name": "Bhupendra Chauhan",
+        "popularity": 0.0143,
+        "profile_path": null,
+        "cast_id": 23,
+        "character": "Inspector Rathi",
+        "credit_id": "6a0419dd368631d4d87bccce",
+        "order": 11
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3100635,
+        "known_for_department": "Acting",
+        "name": "Dev Chauhan",
+        "original_name": "Dev Chauhan",
+        "popularity": 0.1042,
+        "profile_path": null,
+        "cast_id": 24,
+        "character": "Pramod Mishra",
+        "credit_id": "6a0419e7b7c44dd94da603f1",
+        "order": 12
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3462330,
+        "known_for_department": "Acting",
+        "name": "Ajay Madhok",
+        "original_name": "Ajay Madhok",
+        "popularity": 0.1141,
+        "profile_path": null,
+        "cast_id": 25,
+        "character": "Judge Rajiv Menon",
+        "credit_id": "6a041a015d309dc95b2d090b",
+        "order": 13
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 6209712,
+        "known_for_department": "Acting",
+        "name": "Divija Gambhir",
+        "original_name": "Divija Gambhir",
+        "popularity": 0.0143,
+        "profile_path": null,
+        "cast_id": 26,
+        "character": "Jhanvi Shenoy",
+        "credit_id": "6a041a198ac6678a76377bf9",
+        "order": 14
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4074870,
+        "known_for_department": "Acting",
+        "name": "Saad Baba",
+        "original_name": "Saad Baba",
+        "popularity": 0.0732,
+        "profile_path": null,
+        "cast_id": 27,
+        "character": "Adv. Prakash Malhotra",
+        "credit_id": "6a041a22f49eab75c8a4657e",
+        "order": 15
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5544960,
+        "known_for_department": "Acting",
+        "name": "Aatm Prakash Mishra",
+        "original_name": "Aatm Prakash Mishra",
+        "popularity": 0.0418,
+        "profile_path": "/iOG4REjS4hhEUb1iCLBtQH3ftKJ.jpg",
+        "cast_id": 44,
+        "character": "Atmaram",
+        "credit_id": "6a166f545ea3b67a9d90f462",
+        "order": 16
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1514227,
+        "known_for_department": "Directing",
+        "name": "Ashwiny Iyer Tiwari",
+        "original_name": "Ashwiny Iyer Tiwari",
+        "popularity": 0.3586,
+        "profile_path": "/b7n68jbzVAN68CJSI8ubERlToli.jpg",
+        "credit_id": "67a706acb9360c3e33e05a63",
+        "department": "Directing",
+        "job": "Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 86224,
+        "known_for_department": "Acting",
+        "name": "Harman Baweja",
+        "original_name": "Harman Baweja",
+        "popularity": 0.487,
+        "profile_path": "/j1bekyIXHcZqfAn5GGF2o2uAAau.jpg",
+        "credit_id": "67a706db31001bec13c8a796",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1734982,
+        "known_for_department": "Production",
+        "name": "Pammi Baweja",
+        "original_name": "Pammi Baweja",
+        "popularity": 0.1561,
+        "profile_path": null,
+        "credit_id": "69bbee64a80fd7d645a98828",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2112803,
+        "known_for_department": "Production",
+        "name": "Smitha Baliga",
+        "original_name": "Smitha Baliga",
+        "popularity": 0.0503,
+        "profile_path": null,
+        "credit_id": "69bbee782ec357ff5b00f3d8",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1475071,
+        "known_for_department": "Writing",
+        "name": "Arun Sukumar",
+        "original_name": "Arun Sukumar",
+        "popularity": 0.0745,
+        "profile_path": null,
+        "credit_id": "69bbee912ec357ff5b00f3de",
+        "department": "Writing",
+        "job": "Writer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 86224,
+        "known_for_department": "Acting",
+        "name": "Harman Baweja",
+        "original_name": "Harman Baweja",
+        "popularity": 0.487,
+        "profile_path": "/j1bekyIXHcZqfAn5GGF2o2uAAau.jpg",
+        "credit_id": "69bbee9aad231f357ce13498",
+        "department": "Writing",
+        "job": "Writer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1514227,
+        "known_for_department": "Directing",
+        "name": "Ashwiny Iyer Tiwari",
+        "original_name": "Ashwiny Iyer Tiwari",
+        "popularity": 0.3586,
+        "profile_path": "/b7n68jbzVAN68CJSI8ubERlToli.jpg",
+        "credit_id": "69bbeebd3c31402a72e13432",
+        "department": "Writing",
+        "job": "Writer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5204433,
+        "known_for_department": "Writing",
+        "name": "Tasneem Lokhandwala",
+        "original_name": "Tasneem Lokhandwala",
+        "popularity": 0.048,
+        "profile_path": null,
+        "credit_id": "69bbeecee56438a99823d85e",
+        "department": "Writing",
+        "job": "Writer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2154635,
+        "known_for_department": "Writing",
+        "name": "Akshat Ghildial",
+        "original_name": "Akshat Ghildial",
+        "popularity": 0.1715,
+        "profile_path": null,
+        "credit_id": "69bbeee31f5ebd4208aafddc",
+        "department": "Writing",
+        "job": "Dialogue"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2120173,
+        "known_for_department": "Production",
+        "name": "Meenakshi Pandey",
+        "original_name": "Meenakshi Pandey",
+        "popularity": 0.0593,
+        "profile_path": null,
+        "credit_id": "6a041a52306f065e4937795f",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2120174,
+        "known_for_department": "Production",
+        "name": "Abhinandan Patidar",
+        "original_name": "Abhinandan Patidar",
+        "popularity": 0.0214,
+        "profile_path": null,
+        "credit_id": "6a041a5ba3f244c7bc2d0756",
+        "department": "Production",
+        "job": "Line Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1549618,
+        "known_for_department": "Camera",
+        "name": "Rangarajan Rambadran",
+        "original_name": "Rangarajan Rambadran",
+        "popularity": 0.0969,
+        "profile_path": null,
+        "credit_id": "6a041a7dbf52267d1364e24d",
+        "department": "Camera",
+        "job": "Director of Photography"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1790781,
+        "known_for_department": "Editing",
+        "name": "Charu Shree Roy",
+        "original_name": "Charu Shree Roy",
+        "popularity": 0.154,
+        "profile_path": null,
+        "credit_id": "6a041a836d44fa9a1169b561",
+        "department": "Editing",
+        "job": "Editor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1108802,
+        "known_for_department": "Production",
+        "name": "Mukesh Chhabra",
+        "original_name": "\u092e\u0941\u0915\u0947\u0936 \u091b\u093e\u092c\u0930\u093e",
+        "popularity": 0.5299,
+        "profile_path": "/f5XI2wJs2JPcd5FSECsdcnkyOMW.jpg",
+        "credit_id": "6a041a8d5967a4c00b69b5c1",
+        "department": "Production",
+        "job": "Casting Director"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1727702,
+        "known_for_department": "Art",
+        "name": "Sandeep Meher",
+        "original_name": "Sandeep Meher",
+        "popularity": 0.0608,
+        "profile_path": null,
+        "credit_id": "6a041a968ac6678a76377c00",
+        "department": "Art",
+        "job": "Production Design"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2278070,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Sanam Ratansi",
+        "original_name": "Sanam Ratansi",
+        "popularity": 0.1411,
+        "profile_path": null,
+        "credit_id": "6a041aa8848cb66185886060",
+        "department": "Costume & Make-Up",
+        "job": "Costume Designer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2051076,
+        "known_for_department": "Sound",
+        "name": "Allwin Rego",
+        "original_name": "Allwin Rego",
+        "popularity": 0.159,
+        "profile_path": null,
+        "credit_id": "6a041acac729fa176b886144",
+        "department": "Sound",
+        "job": "Sound Designer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2259689,
+        "known_for_department": "Sound",
+        "name": "Sanjay Maurya",
+        "original_name": "Sanjay Maurya",
+        "popularity": 0.1773,
+        "profile_path": null,
+        "credit_id": "6a041ad4ed2200aa0f64e487",
+        "department": "Sound",
+        "job": "Sound Designer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 6123400,
+        "known_for_department": "Visual Effects",
+        "name": "Debdoot Ghosh",
+        "original_name": "Debdoot Ghosh",
+        "popularity": 0.0143,
+        "profile_path": null,
+        "credit_id": "6a041adfe985910d8969b4df",
+        "department": "Visual Effects",
+        "job": "VFX Supervisor"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1810275,
+        "known_for_department": "Crew",
+        "name": "Vikram Dahiya",
+        "original_name": "Vikram Dahiya",
+        "popularity": 0.2057,
+        "profile_path": null,
+        "credit_id": "6a041aef94c9bbc0d364e54a",
+        "department": "Crew",
+        "job": "Stunt Coordinator"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2416521,
+        "known_for_department": "Editing",
+        "name": "Praful Pramod Sawant",
+        "original_name": "Praful Pramod Sawant",
+        "popularity": 0.0143,
+        "profile_path": null,
+        "credit_id": "6a041b08ab3d056573a60294",
+        "department": "Editing",
+        "job": "Associate Editor"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3198769,
+        "known_for_department": "Crew",
+        "name": "Ritchie Burton",
+        "original_name": "Ritchie Burton",
+        "popularity": 0.0239,
+        "profile_path": null,
+        "credit_id": "6a041b1eceb6d983cf7bce01",
+        "department": "Crew",
+        "job": "Choreographer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 6209713,
+        "known_for_department": "Production",
+        "name": "Harshita Dhalwani",
+        "original_name": "Harshita Dhalwani",
+        "popularity": 0.0071,
+        "profile_path": null,
+        "credit_id": "6a041b329843ec61482d09c9",
+        "department": "Production",
+        "job": "Production Coordinator"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 6209714,
+        "known_for_department": "Production",
+        "name": "Tanka Prasad Acharya",
+        "original_name": "Tanka Prasad Acharya",
+        "popularity": 0.0,
+        "profile_path": null,
+        "credit_id": "6a041b3e81fa12548a377739",
+        "department": "Production",
+        "job": "Production Coordinator"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 6209714,
+        "known_for_department": "Production",
+        "name": "Tanka Prasad Acharya",
+        "original_name": "Tanka Prasad Acharya",
+        "popularity": 0.0,
+        "profile_path": null,
+        "credit_id": "6a041b57f49eab75c8a4658f",
+        "department": "Crew",
+        "job": "Production Controller"
+      }
+    ]
+  },
+  "keywords": {
+    "id": 1431071,
+    "keywords": [
+      {
+        "id": 6256,
+        "name": "truth"
+      },
+      {
+        "id": 15108,
+        "name": "justice"
+      },
+      {
+        "id": 214780,
+        "name": "courtroom drama"
+      },
+      {
+        "id": 222519,
+        "name": "legal system"
+      },
+      {
+        "id": 307949,
+        "name": "power dynamics"
+      },
+      {
+        "id": 373963,
+        "name": "class divide"
+      },
+      {
+        "id": 375627,
+        "name": "public prosecutor"
+      },
+      {
+        "id": 375628,
+        "name": "female lead"
+      }
+    ]
+  }
+}

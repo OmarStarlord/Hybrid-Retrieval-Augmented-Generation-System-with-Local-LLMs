@@ -1,0 +1,206 @@
+{
+  "movie": {
+    "adult": false,
+    "backdrop_path": "/dMX6RR0SHgI43r2CsDkF5wzozOw.jpg",
+    "belongs_to_collection": null,
+    "budget": 150000,
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      }
+    ],
+    "homepage": "",
+    "id": 758308,
+    "imdb_id": "tt7852780",
+    "origin_country": [
+      "AR"
+    ],
+    "original_language": "es",
+    "original_title": "Red Latex",
+    "overview": "Eric lives with his pregnant wife in his in-laws' house because they have no money to become independent. Eric is very docile and the people around him: his wife, his father, his father-in-law, and his boss have always told him what he has to do with his life. But everything has a limit. Fed of with this situation, Eric leaves his family and escapes to the mansion of the dominatrix Mistress Gise to become her slave. Eric hopes to achieve liberation by submitting to Mistress Gise. When his family finds out, they do what they can to get him back. Meanwhile, Mistress Gise is a twisted Domina who takes Eric's slavery beyond any expected limit.",
+    "popularity": 129.4559,
+    "poster_path": "/hP1o5waM6ohMTKr4QcOtyOP1oiu.jpg",
+    "production_companies": [
+      {
+        "id": 157024,
+        "logo_path": null,
+        "name": "Sewati Audiovisual",
+        "origin_country": "AR"
+      },
+      {
+        "id": 202582,
+        "logo_path": null,
+        "name": "Gaucho Productions",
+        "origin_country": ""
+      }
+    ],
+    "production_countries": [
+      {
+        "iso_3166_1": "AR",
+        "name": "Argentina"
+      }
+    ],
+    "release_date": "2020-02-22",
+    "revenue": 0,
+    "runtime": 88,
+    "softcore": false,
+    "spoken_languages": [
+      {
+        "english_name": "Spanish",
+        "iso_639_1": "es",
+        "name": "Espa\u00f1ol"
+      }
+    ],
+    "status": "Released",
+    "tagline": "Slavery will set you free",
+    "title": "Red Latex",
+    "video": false,
+    "vote_average": 5.149,
+    "vote_count": 37
+  },
+  "credits": {
+    "id": 758308,
+    "cast": [
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2455665,
+        "known_for_department": "Acting",
+        "name": "Fedra Duarte",
+        "original_name": "Fedra Duarte",
+        "popularity": 0.1937,
+        "profile_path": null,
+        "cast_id": 1,
+        "character": "Mistress Gise",
+        "credit_id": "5f9994d55a07f50039326439",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2833891,
+        "known_for_department": "Acting",
+        "name": "Nestor Napolitano",
+        "original_name": "Nestor Napolitano",
+        "popularity": 0.0767,
+        "profile_path": null,
+        "cast_id": 2,
+        "character": "Quiel",
+        "credit_id": "5f9994ec43999b0036fd0f65",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2455664,
+        "known_for_department": "Acting",
+        "name": "Valeria Rowinski",
+        "original_name": "Valeria Rowinski",
+        "popularity": 0.0311,
+        "profile_path": null,
+        "cast_id": 3,
+        "character": "Julia",
+        "credit_id": "5f999504a7e3630037a70d96",
+        "order": 2
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2936420,
+        "known_for_department": "Directing",
+        "name": "Gerard Marc\u00f3 de Mas",
+        "original_name": "Gerard Marc\u00f3 de Mas",
+        "popularity": 0.0311,
+        "profile_path": null,
+        "credit_id": "60c4b4e1c3514c003f1eee5a",
+        "department": "Writing",
+        "job": "Writer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2833897,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Mariana Jara",
+        "original_name": "Mariana Jara",
+        "popularity": 0.0239,
+        "profile_path": null,
+        "credit_id": "5f99958955937b0037166bc1",
+        "department": "Costume & Make-Up",
+        "job": "Makeup & Hair"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2833898,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Cistina Uberti",
+        "original_name": "Cistina Uberti",
+        "popularity": 0.0143,
+        "profile_path": null,
+        "credit_id": "5f9995a5a7e3630039a6ece3",
+        "department": "Costume & Make-Up",
+        "job": "Makeup & Hair Assistant"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2265214,
+        "known_for_department": "Editing",
+        "name": "Luca Castello",
+        "original_name": "Luca Castello",
+        "popularity": 0.0503,
+        "profile_path": null,
+        "credit_id": "5f99956d2f8d0900366eb116",
+        "department": "Editing",
+        "job": "Editor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2936420,
+        "known_for_department": "Directing",
+        "name": "Gerard Marc\u00f3 de Mas",
+        "original_name": "Gerard Marc\u00f3 de Mas",
+        "popularity": 0.0311,
+        "profile_path": null,
+        "credit_id": "6000a54d7390c0003bf66737",
+        "department": "Directing",
+        "job": "Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3151443,
+        "known_for_department": "Production",
+        "name": "Maximiliano Zurraco",
+        "original_name": "Maximiliano Zurraco",
+        "popularity": 0.0629,
+        "profile_path": "/lP0vK379iwZ1T81Njbwm4n9odsw.jpg",
+        "credit_id": "6733515509b256d09461be7a",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2833895,
+        "known_for_department": "Camera",
+        "name": "Cristian Bidone",
+        "original_name": "Cristian Bidone",
+        "popularity": 0.1433,
+        "profile_path": "/LZU9npl5jksoh883KuFjzZkjgb.jpg",
+        "credit_id": "69ce6e0c08e3ebb26f4b4ff3",
+        "department": "Camera",
+        "job": "Director of Photography"
+      }
+    ]
+  },
+  "keywords": {
+    "id": 758308,
+    "keywords": []
+  }
+}

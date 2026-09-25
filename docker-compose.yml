@@ -1,0 +1,145 @@
+services:
+  neo4j:
+    image: neo4j:5.13
+    container_name: neo4j-db
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/passpass
+    volumes:
+      - neo4j_data:/data
+    networks:
+      - rag-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u neo4j -p passpass 'RETURN 1' || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+      start_period: 30s
+
+  chroma-db:
+    image: chromadb/chroma:1.5.9
+    container_name: chroma-db
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma_data:/data
+    networks:
+      - rag-network
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    networks:
+      - rag-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 20s
+  ollama-pull:
+    image: ollama/ollama
+    container_name: ollama-pull
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - MODEL_ID=${MODEL_ID}
+    networks:
+      - rag-network
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      "echo Pulling Ollama model: $$MODEL_ID;
+      ollama pull $$MODEL_ID;
+      echo Model pull complete.;
+      ollama list"
+    restart: "no"
+
+  ingestion-service:
+    build: ./rag_graph
+    container_name: ingestion-service
+    env_file:
+      - .env
+    environment:
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USERNAME=neo4j
+      - NEO4J_PASSWORD=passpass
+      - CHROMA_HOST=chroma-db
+      - CHROMA_PORT=8000
+      - MODEL_URL=http://ollama:11434
+      - MODEL_ID=${MODEL_ID}
+      - FLASK_APP=web_app.py
+    command: python ingestion/build_graph.py
+    depends_on:
+      neo4j:
+        condition: service_healthy
+      chroma-db:
+        condition: service_started
+      ollama-pull:
+        condition: service_completed_successfully
+    networks:
+      - rag-network
+    restart: "no"
+
+  flask-backend:
+    build: ./rag_graph
+    container_name: flask-rag-backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    environment:
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USERNAME=neo4j
+      - NEO4J_PASSWORD=passpass
+      - CHROMA_HOST=chroma-db
+      - CHROMA_PORT=8000
+      - MODEL_URL=http://ollama:11434
+      - MODEL_ID=${MODEL_ID}
+      - FLASK_APP=web_app.py
+    command: flask run --host=0.0.0.0 --port=5000
+    depends_on:
+      ingestion-service:
+        condition: service_completed_successfully
+    networks:
+      - rag-network
+    restart: unless-stopped
+
+  spring-microservice:
+    build: ./llamrag-spring
+    container_name: spring-rag-microservice
+    ports:
+      - "8080:8080"
+    environment:
+      - FLASK_URL=http://flask-backend:5000/ask
+    depends_on:
+      - flask-backend
+    networks:
+      - rag-network
+    restart: unless-stopped
+
+networks:
+  rag-network:
+    driver: bridge
+
+volumes:
+  neo4j_data:
+  chroma_data:
+  ollama_data:

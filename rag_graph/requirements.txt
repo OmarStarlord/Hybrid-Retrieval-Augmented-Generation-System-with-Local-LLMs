@@ -1,0 +1,10 @@
+neo4j
+chromadb
+sentence-transformers
+requests
+python-dotenv
+Flask
+Flask-Cors
+pandas
+seaborn
+matplotlib

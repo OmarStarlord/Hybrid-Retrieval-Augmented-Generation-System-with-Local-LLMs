@@ -1,0 +1,267 @@
+{
+  "movie": {
+    "adult": false,
+    "backdrop_path": "/82hjEm0x5Val6nCwExwlawdfwLJ.jpg",
+    "belongs_to_collection": null,
+    "budget": 0,
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 27,
+        "name": "Horror"
+      }
+    ],
+    "homepage": "",
+    "id": 1639398,
+    "imdb_id": "tt32205214",
+    "origin_country": [
+      "MX"
+    ],
+    "original_language": "es",
+    "original_title": "Psic\u00f3pata: El Asesino del Conejo Blanco",
+    "overview": "Follows an \"ultra-violent and intelligent\" psychopath who challenges the police by leaving a white paper rabbit at each crime scene, connecting them all.",
+    "popularity": 73.2317,
+    "poster_path": "/7tIgfsTWuzXKR2kLRUPrLRTbcuo.jpg",
+    "production_companies": [],
+    "production_countries": [],
+    "release_date": "2026-03-19",
+    "revenue": 0,
+    "runtime": 99,
+    "softcore": false,
+    "spoken_languages": [
+      {
+        "english_name": "Spanish",
+        "iso_639_1": "es",
+        "name": "Espa\u00f1ol"
+      }
+    ],
+    "status": "Released",
+    "tagline": "",
+    "title": "Mexican Psycho",
+    "video": false,
+    "vote_average": 7.387,
+    "vote_count": 75
+  },
+  "credits": {
+    "id": 1639398,
+    "cast": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1831843,
+        "known_for_department": "Acting",
+        "name": "Adriana Llabr\u00e9s",
+        "original_name": "Adriana Llabr\u00e9s",
+        "popularity": 0.3736,
+        "profile_path": "/eHAxHKyxj0QTM8NjrBDqBeQJr9b.jpg",
+        "cast_id": 3,
+        "character": "Nora",
+        "credit_id": "69994e94f01156f149c59810",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1299682,
+        "known_for_department": "Acting",
+        "name": "Hoze Mel\u00e9ndez",
+        "original_name": "Hoze Mel\u00e9ndez",
+        "popularity": 0.2761,
+        "profile_path": "/uEYPg9sZRpPkMTOXfLbmiK5DBLg.jpg",
+        "cast_id": 4,
+        "character": "Ariel",
+        "credit_id": "69994e9f290a5d5cdd80e361",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 947768,
+        "known_for_department": "Acting",
+        "name": "Andr\u00e9s Almeida",
+        "original_name": "Andr\u00e9s Almeida",
+        "popularity": 0.5594,
+        "profile_path": "/4cTw37HIfjFrD4CcFf8IKokyYJM.jpg",
+        "cast_id": 5,
+        "character": "Eder",
+        "credit_id": "69994eac290a5d5cdd80e365",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 52746,
+        "known_for_department": "Acting",
+        "name": "Horacio Garc\u00eda Rojas",
+        "original_name": "Horacio Garc\u00eda Rojas",
+        "popularity": 1.1554,
+        "profile_path": "/75Yo3FmhEOZhMzP0ImYQIoalurn.jpg",
+        "cast_id": 11,
+        "character": "Ram\u00edrez",
+        "credit_id": "69994f13f01156f149c59815",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1731102,
+        "known_for_department": "Acting",
+        "name": "Ruth Ramos",
+        "original_name": "Ruth Jazm\u00edn Ramos",
+        "popularity": 1.1749,
+        "profile_path": "/6043w3WOtFSkjw1YGFaP1SItoHr.jpg",
+        "cast_id": 13,
+        "character": "Celeste",
+        "credit_id": "69994f2e2140beddc2b282f3",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1238952,
+        "known_for_department": "Acting",
+        "name": "Nailea Norvind",
+        "original_name": "Nailea Norvind",
+        "popularity": 0.372,
+        "profile_path": "/egV1BPIcHkkZVxJNzQuFzpTOn0f.jpg",
+        "cast_id": 6,
+        "character": "Hedra",
+        "credit_id": "69994eba4cd13663e06a2e1f",
+        "order": 5
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1301522,
+        "known_for_department": "Acting",
+        "name": "Gerardo Trejoluna",
+        "original_name": "Gerardo Trejoluna",
+        "popularity": 0.247,
+        "profile_path": "/fJzcjj3JrARh3iQEx5lMbCEfRKq.jpg",
+        "cast_id": 7,
+        "character": "Melesio",
+        "credit_id": "69994ed28b64c709dfe8e9c8",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1309506,
+        "known_for_department": "Acting",
+        "name": "Myriam Bravo",
+        "original_name": "Myriam Bravo",
+        "popularity": 0.1652,
+        "profile_path": "/xUyNkMU3FkUSY6OlPIA93kzj5bG.jpg",
+        "cast_id": 9,
+        "character": "Julieta",
+        "credit_id": "69994ef29b1dc8bf2ab282e3",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 6065406,
+        "known_for_department": "Acting",
+        "name": "Ana Rivero",
+        "original_name": "Ana Rivero",
+        "popularity": 0.0327,
+        "profile_path": "/rag3SfuPV6AwcbdCmYikbE89frq.jpg",
+        "cast_id": 15,
+        "character": "Irene",
+        "credit_id": "69b20547291efafa9c21d0b2",
+        "order": 8
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1549908,
+        "known_for_department": "Acting",
+        "name": "Andr\u00e9s Delgado",
+        "original_name": "Andr\u00e9s Delgado",
+        "popularity": 0.3015,
+        "profile_path": "/gq7nwfzsF9R81qGCc2tlzgO2FI7.jpg",
+        "cast_id": 10,
+        "character": "Rafa",
+        "credit_id": "69994f009b1dc8bf2ab282e7",
+        "order": 9
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1633212,
+        "known_for_department": "Acting",
+        "name": "Sara Ju\u00e1rez",
+        "original_name": "Sara Ju\u00e1rez",
+        "popularity": 0.1635,
+        "profile_path": null,
+        "cast_id": 12,
+        "character": "Romina",
+        "credit_id": "69994f2195aa4a8dc80e48cb",
+        "order": 10
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3991137,
+        "known_for_department": "Acting",
+        "name": "Aaron Aguilar",
+        "original_name": "Aaron Aguilar",
+        "popularity": 0.1148,
+        "profile_path": null,
+        "cast_id": 8,
+        "character": "Ricardo",
+        "credit_id": "69994ee87a3b9ed33cfc1cec",
+        "order": 11
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2537953,
+        "known_for_department": "Acting",
+        "name": "Minerva Velasco",
+        "original_name": "Minerva Velasco",
+        "popularity": 0.0286,
+        "profile_path": null,
+        "cast_id": 16,
+        "character": "Maestra",
+        "credit_id": "69b2056ff1b7fa02664ef97d",
+        "order": 12
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1044131,
+        "known_for_department": "Directing",
+        "name": "J. Xavier Velasco",
+        "original_name": "J. Xavier Velasco",
+        "popularity": 0.4387,
+        "profile_path": null,
+        "credit_id": "69994e66290a5d5cdd80e357",
+        "department": "Directing",
+        "job": "Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 563577,
+        "known_for_department": "Directing",
+        "name": "Fernando Barreda Luna",
+        "original_name": "Fernando Barreda Luna",
+        "popularity": 0.7057,
+        "profile_path": null,
+        "credit_id": "69994e7a1ee0e94c3a6a2e3f",
+        "department": "Writing",
+        "job": "Writer"
+      }
+    ]
+  },
+  "keywords": {
+    "id": 1639398,
+    "keywords": []
+  }
+}
